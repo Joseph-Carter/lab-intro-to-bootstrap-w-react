@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 
-const Search = ({ setPosts, postData }) => {
+const Search = ({ setPosts, postData, setQuery, query }) => {
 
-    const [query, setQuery] = useState("")
 
     const handleQuery = (e) => {
         setQuery(e.target.value)

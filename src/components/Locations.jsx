@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Locations = ({ locations, setPosts, postData }) => {
+const Locations = ({ locations, setPosts, postData, setQuery }) => {
 
     const filterLocations = (l) => {
-        setPosts(postData.filter((post) => post.location === l ))
+        setPosts(postData.filter((post) => post.location === l ));
+        setQuery(l);
     }
 
     return (

@@ -20,16 +20,17 @@ function App() {
   }) 
   
   const [posts, setPosts] = useState(postData)
+  const [query, setQuery] = useState("")
 
   return (
     <main>
       <NavBar />
       <span>Travel is the only thing you buy that makes you richer</span>
-      <Search setPosts={setPosts} postData={postData}/>
+      <Search setPosts={setPosts} postData={postData} setQuery={setQuery}/>
       {posts.map((post) => {
         return <Post post={post} />
       })}
-      <Locations locations={locations} setPosts={setPosts} postData={postData}/>
+      <Locations locations={locations} setPosts={setPosts} postData={postData} setQuery={setQuery}/>
     </main>
   );
 }
