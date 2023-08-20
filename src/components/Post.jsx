@@ -1,16 +1,25 @@
-import React from 'react';
-import images from "../images"
+import React from "react";
+import images from "../images";
 
 const Post = ({ post }) => {
-    return (
-        <div className=''>
-            <img src={images[post.location.toLowerCase().replace(' ', '-')]}/>
-            <h4>{post.title}</h4>
-            <p>{post.location}</p>
-            <p>{post.content}</p>
-            <button>Go to Post</button>
+  return (
+    <div class="col">
+      <div class="card">
+        <img
+          src={images[post.location.toLowerCase().replace(" ", "-")]}
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h4 className="card-title">{post.title}</h4>
+          <p className="card-text">{post.location}</p>
+          <span className="card-text ">{post.content}</span>
+          <button type="button" className="btn btn-warning">
+            Go to Post ▶️
+          </button>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default Post;

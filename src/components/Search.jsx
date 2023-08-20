@@ -13,11 +13,11 @@ const Search = ({ setPosts, postData, setQuery, query }) => {
         setPosts(postData)
     }
     return (
-        <div>
+        <div className='column'>
             <form>
                 <label>Search posts by location...</label>
                 <input type="text" value={query} onChange={handleQuery}/>
-                <button onClick={clearQuery}>Cancel</button>
+                <button onClick={clearQuery} type="button" className="btn btn-warning">Cancel</button>
             </form>
         </div>
     );
