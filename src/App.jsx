@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Post from "./components/Post";
 import Locations from "./components/Locations";
 import { useState } from "react";
+import Search from "./components/Search";
 
 function App() {
   console.log(postData)
@@ -24,6 +25,7 @@ function App() {
     <main>
       <NavBar />
       <span>Travel is the only thing you buy that makes you richer</span>
+      <Search setPosts={setPosts} postData={postData}/>
       {posts.map((post) => {
         return <Post post={post} />
       })}
