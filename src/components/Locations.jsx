@@ -7,6 +7,7 @@ const Locations = ({ locations, setPosts, postData, setQuery }) => {
   };
 
   return (
+    <div className="col-sm-12 col-md-4">
     <div className="col">
       <table>
         <th>
@@ -25,6 +26,7 @@ const Locations = ({ locations, setPosts, postData, setQuery }) => {
           })}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };

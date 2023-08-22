@@ -7,9 +7,9 @@ const QuoteBanner = () => {
     }
 
     return (
-        <div  className='jumbotron jumbotron-fluid text-center'>
+        <div style={bannerStyle} className='jumbotron jumbotron-fluid text-center'>
             <div className='container'>
-                <h2 className='display-4' style={{ boxShadow:'2px 2px 4px #000',fontFamily:'Snell Roundhand, cursive' }}>Travel is the only thing you buy that makes you richer...</h2>
+                <h2 className='display-4' style={{ fontFamily:'Snell Roundhand, cursive' }}>Travel is the only thing you buy that makes you richer...</h2>
             </div>
         </div>
     );

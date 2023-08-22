@@ -7,12 +7,12 @@ const Post = ({ post }) => {
       <div class="card">
         <img
           src={images[post.location.toLowerCase().replace(" ", "-")]}
-          class="card-img-top"
+          class="card-img-top" style={{height:"300px",width:"100%"}}
         />
-        <div class="card-body">
+        <div class="card-body d-block">
           <h4 className="card-title">{post.title}</h4>
           <p className="card-text">{post.location}</p>
-          <span className="card-text ">{post.content}</span>
+          <p className="card-text text-truncate">{post.content}</p>
           <button type="button" className="btn btn-warning">
             Go to Post ▶️
           </button>

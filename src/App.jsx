@@ -24,7 +24,8 @@ function App() {
 
   return (
     <main>
-      <div className="container text-center">
+      <div className="container-fluid mb-5">
+        <div className="row d-md-block d-none">
         <NavBar />
         <QuoteBanner />
         <Search setPosts={setPosts} postData={postData} setQuery={setQuery} />
@@ -39,6 +40,7 @@ function App() {
           postData={postData}
           setQuery={setQuery}
         />
+        </div>
       </div>
     </main>
   );
