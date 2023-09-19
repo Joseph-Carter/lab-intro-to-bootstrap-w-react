@@ -7,7 +7,6 @@ import Search from "./components/Search";
 import QuoteBanner from "./components/QuoteBanner";
 
 function App() {
-  console.log(postData);
 
   let locations = {};
 
