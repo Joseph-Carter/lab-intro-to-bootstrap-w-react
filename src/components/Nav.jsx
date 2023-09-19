@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar = () => {
+const Nav= () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -31,4 +31,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Nav;

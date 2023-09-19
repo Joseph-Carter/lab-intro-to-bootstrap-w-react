@@ -4,7 +4,7 @@ import Locations from "./components/Locations";
 import { useState } from "react";
 import Search from "./components/Search";
 import QuoteBanner from "./components/QuoteBanner";
-import NavBar from "./components/NavBar";
+import Nav from "./components/Nav";
 
 function App() {
   let locations = {};
@@ -24,7 +24,7 @@ function App() {
     <main>
       <div className="container-fluid mb-5">
         <div className="row d-md-block d-none">
-          <NavBar />
+          <Nav />
           <QuoteBanner />
           <Search setPosts={setPosts} postData={postData} setQuery={setQuery} />
           <div className="row row-cols-1 row-cols-md-3 g-4">
