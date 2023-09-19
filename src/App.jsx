@@ -1,10 +1,10 @@
 import postData from "./data/posts.json";
-import NavBar from "./components/NavBar";
 import Post from "./components/Post";
 import Locations from "./components/Locations";
 import { useState } from "react";
 import Search from "./components/Search";
 import QuoteBanner from "./components/QuoteBanner";
+import NavBar from "./components/NavBar";
 
 function App() {
 
