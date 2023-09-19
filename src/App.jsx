@@ -7,7 +7,6 @@ import QuoteBanner from "./components/QuoteBanner";
 import NavBar from "./components/NavBar";
 
 function App() {
-
   let locations = {};
 
   postData.forEach((post) => {
@@ -25,20 +24,20 @@ function App() {
     <main>
       <div className="container-fluid mb-5">
         <div className="row d-md-block d-none">
-        <NavBar />
-        <QuoteBanner />
-        <Search setPosts={setPosts} postData={postData} setQuery={setQuery} />
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          {posts.map((post) => {
-            return <Post post={post} />;
-          })}
-        </div>
-        <Locations
-          locations={locations}
-          setPosts={setPosts}
-          postData={postData}
-          setQuery={setQuery}
-        />
+          <NavBar />
+          <QuoteBanner />
+          <Search setPosts={setPosts} postData={postData} setQuery={setQuery} />
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            {posts.map((post) => {
+              return <Post post={post} />;
+            })}
+          </div>
+          <Locations
+            locations={locations}
+            setPosts={setPosts}
+            postData={postData}
+            setQuery={setQuery}
+          />
         </div>
       </div>
     </main>
